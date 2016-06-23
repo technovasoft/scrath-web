@@ -107,7 +107,7 @@ function crear(respuesta) {
 }
 
 
-function alta(pedido,respuesta) {
+/*function alta(pedido,respuesta) {
     var info='';
     pedido.on('data', function(datosparciales){
          info += datosparciales;
@@ -130,7 +130,7 @@ function alta(pedido,respuesta) {
       respuesta.end();
     });
 }
-
+*/
 
 function listado(respuesta) {
     conexion.query('select codigo,descripcion,precio from articulos', function(error,filas){
@@ -186,4 +186,4 @@ function consulta(pedido,respuesta) {
 
 }
 
-console.log('Servidor web iniciado');
+console.log('Conexion iniciando');
